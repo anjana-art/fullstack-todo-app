@@ -1,0 +1,40 @@
+
+  
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+  }
+  .todo-app{
+    width: 100%;
+  border-radius: 10px;
+   max-width: 540px;
+     background: #fff;
+     margin: 100px auto 20px;
+    padding: 40px 30px 70px; 
+   
+}
+  
+ #addbutton{ 
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #d84b3e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }

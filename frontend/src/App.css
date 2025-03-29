@@ -1,0 +1,19 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+ 
+
+}
+.App{
+ width: 100%;
+min-height: 100vh;
+background: linear-gradient(135deg, #153677, #4e085f); 
+
+ display: grid;
+grid-template-columns:1fr 1fr;
+gap: 20px;
+padding: 20px; 
+}
