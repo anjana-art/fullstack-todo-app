@@ -19,7 +19,7 @@ const app = express();
 //middleware
 //app.use(cors({ origin: 'http://localhost:3000' })); //for local dev
 app.use(cors({
-      origin: 'http://localhost:3001' 
+      origin:'https://fullstack-todo-app-frontend-61s8.onrender.com', 'http://localhost:3001' 
     }));
 app.use(express.json());
 //app.use(bodyParser.json());
