@@ -3,12 +3,13 @@ const express = require('express');
 const cors = require('cors');
 const router = require('./routes/todoRoutes.js');
 const mongoose = require('mongoose');
-const dotenv = require("dotenv");
+const dotenv = require('dotenv');
 
 //const mongoURI = "mongodb+srv://bhattaanjana0:anjana123@anjana.zcmelmw.mongodb.net/"
 
 dotenv.config();
-const mongoURI = process.env.MONGO_URI || "mongodb://mongo:27017/todo-app"
+console.log(process.env.m)
+const mongoURI = "mongodb+srv://bhattaanjana0:anjana123@anjana.zcmelmw.mongodb.net/?retryWrites=true&w=majority&appName=anjana"  || "mongodb://mongo:27017/todo-app"
 //const mongodbURI = "mongodb+srv://bhattaanjana0:anjana123@anjana.zcmelmw.mongodb.net/"
 
 
@@ -30,7 +31,7 @@ app.use('/', router);
 //mongodb connection
 //mongoose.connect("mongodb://mongo:27017/todo-app")
 // mongoose.connect("mongodb+srv://bhattaanjana0:anjana123@anjana.zcmelmw.mongodb.net/")
-mongoose.connect("mongodb://mongo:27017/todo-app")
+mongoose.connect(mongoURI)
        .then(()=> console.log('Connected to MongoDB.'))
        .catch((err) => console.error('MongoDB connection error:',err));
 
