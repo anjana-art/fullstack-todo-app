@@ -10,8 +10,10 @@ function App(){
   // Fetch todos from the backend
   const fetchTodos = async () => {
     try {
-      const response = await axios.get('http://localhost:6002/api/todos');
+     // const response = await axios.get('http://localhost:6002/api/todos');
       //const response = await fetch('http://backend:5000/api/todos');
+    const response = await axios.get('https://todolist-8a1u.onrender.com');
+
          setTodos(response.data);
     } catch (error) {
       console.error('Error fetching todos:', error);
