@@ -9,7 +9,7 @@ const cross = "\u00d7";
 const TodoList = ( {todos,fetchTodos,setTodos  } ) => {
    const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/todos/${id}`);
+      await axios.delete(`http://localhost:6002/api/todos/${id}`);
       fetchTodos(); // Refresh the todo list
     } catch (error) {
       console.error('Error deleting todo:', error);
